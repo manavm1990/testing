@@ -31,9 +31,25 @@ exports[`App snapshot renders 1`] = `
       </p>
     </div>
   </section>
-  <section>
+  <section
+    className="flex flex-col gap-4 items-center"
+  >
+    <div>
+      <label
+        className="sr-only"
+        htmlFor="search"
+      >
+        Search 🔍
+      </label>
+      <input
+        id="search"
+        onChange={[Function]}
+        placeholder="Search 🔍"
+        type="search"
+      />
+    </div>
     <p
-      className="text-center text-yellow-500"
+      className="text-yellow-500"
     >
       Loading...
     </p>

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search snapshot renders 1`] = `
+<div>
+  <label
+    className="sr-only"
+    htmlFor="search"
+  >
+    Search 🔍
+  </label>
+  <input
+    id="search"
+    onChange={[Function]}
+    placeholder="Search 🔍"
+    type="search"
+  />
+</div>
+`;

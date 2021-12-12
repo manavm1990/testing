@@ -33,11 +33,12 @@ function App() {
         </div>
       </section>
 
-      <section>
+      <section className="flex flex-col gap-4 items-center">
+        <Search changeHandler={setSearch} />
         {data.data ? (
           <List items={data.data.hits} />
         ) : (
-          <p className="text-center text-yellow-500">Loading...</p>
+          <p className="text-yellow-500">Loading...</p>
         )}
       </section>
     </main>

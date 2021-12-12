@@ -66,12 +66,10 @@ module.exports = {
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  // moduleDirectories: [
-  //   "node_modules"
-  // ],
+  // moduleDirectories: ["node_modules", "src"],
 
   // An array of file extensions your modules use
-  moduleFileExtensions: ["js", "jsx", "json"],
+  // moduleFileExtensions: ["js", "jsx"],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
@@ -150,7 +148,7 @@ module.exports = {
   // ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
-  // "testRegex": "((\\.|/*.)(test))\\.jsx?$",
+  // testRegex: "((\\.|/*.)(test))\\.jsx?$",
 
   // This option allows the use of a custom results processor
   // testResultsProcessor: undefined,
@@ -168,16 +166,13 @@ module.exports = {
   // transform: undefined,
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  // transformIgnorePatterns: [
-  //   "/node_modules/",
-  //   "\\.pnp\\.[^\\/]+$"
-  // ],
+  transformIgnorePatterns: ["/node_modules/(?!(ky/))"],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
 
   // Indicates whether each individual test should be reported during the run
-  // verbose: undefined,
+  verbose: true,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],

@@ -8,8 +8,8 @@ describe("My Test Suite", () => {
 
 describe("reducer", () => {
   const LIST = [
-    { objectID: "1", title: "test1" },
-    { objectID: "2", title: "test2" },
+    { objectID: "1", title: "test1", url: "http://url1.com" },
+    { objectID: "2", title: "test2", url: "http://url2.com" },
   ];
 
   it("should return the initial state", () => {

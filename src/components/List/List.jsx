@@ -5,7 +5,12 @@ function List({ items }) {
     <ul>
       {items.map((item) => (
         <li key={item.objectID} className="text-center">
-          {item.title}
+          <a
+            href={item.url}
+            className="decoration-sky-500 inline-block my-1 underline"
+          >
+            {item.title}
+          </a>
         </li>
       ))}
     </ul>
@@ -17,6 +22,7 @@ List.propTypes = {
     PropTypes.shape({
       objectID: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

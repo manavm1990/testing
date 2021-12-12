@@ -8,7 +8,7 @@ describe("My Test Suite", () => {
   });
 });
 
-describe("Counter", () => {
+describe("App", () => {
   test("snapshot renders", () => {
     const component = renderer.create(<App />);
     expect(component.toJSON()).toMatchSnapshot();

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter snapshot renders 1`] = `
+<p
+  className="font-semibold text-lg text-blue-700"
+>
+  1
+</p>
+`;

@@ -3,7 +3,7 @@ import React from "react";
 
 const URL = "http://hn.algolia.com/api/v1/search?query=react";
 
-const reducer = (state, { type, payload }) => {
+export const reducer = (state, { type, payload } = {}) => {
   switch (type) {
     case "SET_DATA":
       return {

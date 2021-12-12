@@ -2,11 +2,14 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    "jest/globals": true,
   },
   extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
     "xo",
     "prettier",
   ],
@@ -17,7 +20,7 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: "module",
   },
-  plugins: ["react", "jsx-a11y"],
+  plugins: ["react", "jsx-a11y", "jest"],
   rules: {
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "warn",

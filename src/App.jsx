@@ -1,6 +1,6 @@
 import React from "react";
-import Counter from "./components/Counter";
-import List from "./components/List";
+import Counter from "./components/Counter/Counter";
+import List from "./components/List/List";
 import useData from "./hooks/useData";
 
 function App() {

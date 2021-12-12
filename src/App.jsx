@@ -1,12 +1,14 @@
 import React from "react";
 import Counter from "./components/Counter/Counter";
 import List from "./components/List/List";
+import Search from "./components/Search/Search";
 import useData from "./hooks/useData";
 
 function App() {
   const [count, setCount] = React.useState(0);
+  const [search, setSearch] = React.useState("react");
 
-  const data = useData();
+  const data = useData(search);
   if (data.error) {
     return <p className="text-center text-red-500">{data.error}</p>;
   }

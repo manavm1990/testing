@@ -1,8 +1,6 @@
 import ky from "ky";
 import React from "react";
 
-const URL = "http://hn.algolia.com/api/v1/search?query=react";
-
 export const reducer = (state, { type, payload } = {}) => {
   switch (type) {
     case "SET_DATA":
@@ -21,11 +19,13 @@ export const reducer = (state, { type, payload } = {}) => {
   }
 };
 
-function useData() {
+function useData(search) {
   const [state, dispatch] = React.useReducer(reducer, {});
 
+  const url = `http://hn.algolia.com/api/v1/search?query=${search}`;
+
   React.useEffect(() => {
-    ky.get(URL)
+    ky.get(url)
       .json()
       .then((data) => {
         dispatch({ type: "SET_DATA", payload: data });
@@ -33,7 +33,7 @@ function useData() {
       .catch((error) => {
         dispatch({ type: "SET_ERROR", payload: error.message });
       });
-  }, []);
+  }, [url]);
 
   return state;
 }

@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: ["react", "jsx-a11y", "jest"],
   rules: {
+    "capitalized-comments": "off",
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "warn",
   },

@@ -11,7 +11,6 @@ describe("My Test Suite", () => {
 describe("Counter", () => {
   test("snapshot renders", () => {
     const component = renderer.create(<Counter count={1} />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

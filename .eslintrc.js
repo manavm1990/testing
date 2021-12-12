@@ -20,5 +20,6 @@ module.exports = {
   plugins: ["react", "jsx-a11y"],
   rules: {
     "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn",
   },
 };

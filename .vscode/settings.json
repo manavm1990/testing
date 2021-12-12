@@ -1,5 +1,5 @@
 {
-  "css.validate": true,
+  "css.validate": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "addMissingImports": true,
@@ -14,14 +14,17 @@
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "wordWrapColumn",
+  "eslint.alwaysShowStatus": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "eslint.alwaysShowStatus": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "files.autoSave": "onFocusChange",
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
-  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "literals",
   "javascript.preferences.jsxAttributeCompletionStyle": "auto",
   "javascript.suggest.classMemberSnippets.enabled": true,
   "javascript.validate.enable": false,

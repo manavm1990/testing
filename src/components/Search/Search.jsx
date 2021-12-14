@@ -12,7 +12,9 @@ function Search({ changeHandler }) {
         placeholder="Search 🔍"
         type="search"
         onChange={(e) => {
-          changeHandler(e.target.value);
+          setTimeout(() => {
+            changeHandler(e.target.value);
+          }, 200);
         }}
       />
     </div>
